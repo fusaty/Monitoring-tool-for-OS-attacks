@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/astd/META"
+  "_build/install/default/lib/astd/dune-package"
+  "_build/install/default/lib/astd/opam"
+]
+bin: [
+  "_build/install/default/bin/astd.exe"
+]
