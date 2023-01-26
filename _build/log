@@ -3,7 +3,7 @@
 # Shared cache: disabled
 # Workspace root: "C:\\OCaml64\\home\\MichalFusat\\astd"
 # Auto-detected concurrency: 8
-$ C:\OCaml64\home\MichalFusat\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -config > C:\OCaml64\tmp\dune_528895_output
+$ C:\OCaml64\home\MichalFusat\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -config > C:\OCaml64\tmp\dune_679077_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"

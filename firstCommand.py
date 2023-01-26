@@ -15,10 +15,10 @@ def remove_lines_until(filename, start_line):
         
 print("\n  Extracting Sysmon logs...  ")
 
-command = 'wevtutil qe Microsoft-Windows-Sysmon/Operational /f:text /q:"*" > sysmonlogs.txt'
-subprocess.run(command, shell=True)
+# command = 'wevtutil qe Microsoft-Windows-Sysmon/Operational /f:text /q:"*" > sysmonlogs.txt'
+# subprocess.run(command, shell=True)
 
-remove_lines_until('sysmonlogs.txt', 'Event[16000]:')
+# remove_lines_until('sysmonlogs.txt', 'Event[16000]:')
 
 # Open the file in read mode
 with open('sysmonlogs.txt', 'r') as file:
@@ -28,7 +28,7 @@ with open('sysmonlogs.txt', 'r') as file:
 
 
 ## Open the file for writing
-with open('sysmonlogs.txt', 'w') as file:
+with open('sysmonlogsss.txt', 'w') as file:
     # Iterate over the lines in the list
     for line in lines:
         # Check if the line starts with "Event"
@@ -41,6 +41,9 @@ with open('sysmonlogs.txt', 'w') as file:
             file.write("Event\n")
             # Write the second part of the line to the file, without a newline character
             number = (parts[1].strip())
+        elif line.startswith("  "):
+            line = line[2:]
+            file.write(line)
         else:
             # Write the line to the file without adding a newline character
             file.write(number + line)

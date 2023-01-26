@@ -1,0 +1,4 @@
+Source: Microsoft-Windows-Sysmon
+Process Create:
+Image: C:\Windows\System32\vssadmin.exe
+CommandLine: vssadmin.exe delete shadows /all /quiet

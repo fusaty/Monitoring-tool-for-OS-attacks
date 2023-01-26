@@ -15,8 +15,8 @@ with open('output.txt', 'w') as file:
             file.write(line)
         
     for line in lines:
-        if "Possible_shadow_copies_deletion_attack" in line:
+        if "Critical" in line:
             # If the string is found, write a message to the console
-            print("\n  There is a possibility of shadow copies deletion attack on your Operating system. \n  Program identified use of vssadmin.exe for shadow copy deletion or resizing on endpoints. \n  This commonly occurs in tandem with ransomware or other destructive attacks.  \n")
+            print("\n  There is a possibility that your system has been compromised  \n")
         
     
