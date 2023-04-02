@@ -5,13 +5,13 @@ Prerequisites
     Python 3.x
     OCaml 4.0 or higher
 
-Installation
+## Installation
 
     Clone the repository to your local machine.
     Install the required dependencies.
     Run the batch script to start the program.
 
-Usage
+## Usage
 
 The program is designed to work with Sysmon logs recorded in a .txt file. To use the program, follow these steps:
 
@@ -19,7 +19,7 @@ The program is designed to work with Sysmon logs recorded in a .txt file. To use
     Run the batch script to start the program.
     The program will automatically process the Sysmon log file and generate the desired output.
 
-System Guard - Detecting Potential Attacks on a System
+## System Guard - Detecting Potential Attacks on a System
 
 This project consists of two Python scripts designed primarily to work with Sysmon logs saved in a .txt file, a main part written in OCaml, and an executable batch script to run the entire system.
 
