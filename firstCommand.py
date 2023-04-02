@@ -15,8 +15,8 @@ def remove_lines_until(filename, start_line):
         
 print("\n  Extracting Sysmon logs...  ")
 
-# command = 'wevtutil qe Microsoft-Windows-Sysmon/Operational /f:text /q:"*" > sysmonlogs.txt'
-# subprocess.run(command, shell=True)
+command = 'wevtutil qe Microsoft-Windows-Sysmon/Operational /f:text /q:"*" > sysmonlogs.txt'
+subprocess.run(command, shell=True)
 
 # remove_lines_until('sysmonlogs.txt', 'Event[16000]:')
 
